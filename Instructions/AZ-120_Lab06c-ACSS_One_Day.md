@@ -134,7 +134,7 @@ En esta tarea, creará la red virtual de Azure que hospeda todas las máquinas v
 
 - bastion
 - aplicación: diseñada para hospedar la aplicación SAP y los servidores de instancias de SAP Central Services
-- db: diseñado para hospedar el nivel de base de datos de SAP
+- db: diseñada para hospedar el nivel de base de datos de SAP
 
 1. En el equipo de laboratorio, en la ventana del explorador web que muestra Azure Portal, en el cuadro de texto **Buscar**, busque y seleccione **Redes virtuales**.
 1. En la página **Redes virtuales**, seleccione **y Crear**.
