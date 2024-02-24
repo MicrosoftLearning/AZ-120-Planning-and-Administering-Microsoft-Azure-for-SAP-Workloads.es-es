@@ -7,6 +7,10 @@ lab:
 # Módulo AZ 1006: Diseño e implementación de una infraestructura para admitir cargas de trabajo de SAP en Azure
 # Laboratorio del curso AZ-1006 de un día: Información general sobre la implementación y el mantenimiento del Azure Center for SAP solutions (ACSS)
 
+>**Importante**: Actualmente **no se admite este laboratorio** (febrero de 2024).
+    - Para obtener información detallada sobre la implementación de requisitos previos manuales, consulte [Laboratorio 6a](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Instructions/AZ-120_Lab06a-ACSS_One_Day.md)
+    - Para obtener información sobre la implementación de la infraestructura de demostración de ACSS, consulte [Laboratorio 6c(https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Instructions/AZ-120_Lab06c-ACSS_One_Day.md)].
+
 Tiempo estimado: 100 minutos
 
 Todas las tareas de este laboratorio de cursos de AZ-1006 de un día se realizan desde Azure Portal
@@ -15,7 +19,9 @@ Todas las tareas de este laboratorio de cursos de AZ-1006 de un día se realizan
 
 Después de completar este laboratorio, podrá hacer lo siguiente:
 
-- Implementación y mantenimiento de la infraestructura que hospeda cargas de trabajo de SAP en Azure mediante Azure Center for SAP solutions
+- Implementación de los requisitos previos mínimos para evaluar la implementación de cargas de trabajo de SAP en Azure mediante Azure Center for SAP solutions
+- Implementación de la infraestructura que hospeda las cargas de trabajo de SAP en Azure usando Azure Center for SAP solutions
+- Mantenimiento de cargas de trabajo de SAP en Azure junto con el uso de Azure Center for SAP solutions
 
 ## Instrucciones
 
@@ -109,7 +115,7 @@ En esta tarea, creará una identidad administrada asignada por el usuario de Mic
 En esta tarea, creará la red virtual de Azure que hospeda todas las máquinas virtuales de Azure incluidas en la implementación. Además, dentro de la red virtual, se crean las siguientes subredes:
 
 - aplicación: diseñada para hospedar la aplicación SAP y los servidores de instancias de SAP Central Services
-- db: diseñado para hospedar el nivel de base de datos de SAP
+- db: diseñada para hospedar el nivel de base de datos de SAP
 
 1. En el equipo de laboratorio, en la ventana del explorador web que muestra Azure Portal, en el cuadro de texto **Buscar**, busque y seleccione **Redes virtuales**.
 1. En la página **Redes virtuales**, seleccione **y Crear**.
@@ -124,7 +130,7 @@ En esta tarea, creará la red virtual de Azure que hospeda todas las máquinas v
 
 1. En la pestaña **Seguridad**, acepte la configuración predeterminada y seleccione **Siguiente**.
 
-   >**Nota**: en este momento, puede aprovisionar tanto Azure Bastion como Azure Firewall, pero los aprovisionará por separado una vez creada la red virtual.
+   >**Nota**: En este momento, puede aprovisionar tanto Azure Bastion como Azure Firewall, pero los aprovisionará por separado una vez creada la red virtual.
 
 1. En la pestaña **Direcciones IP**, especifique la siguiente configuración y, a continuación, seleccione **Revisar y crear**:
 
@@ -377,8 +383,8 @@ Esta actividad corresponde a la siguiente tarea de este ejercicio:
 #### Tarea 1: Creación de soluciones de Azure Virtual Instance para SAP (VIS)
 
 1. En el equipo de laboratorio, en la ventana de Microsoft Edge que muestra Azure Portal, en el cuadro de texto **Buscar**, busque y seleccione **Azure Center for SAP Solutions**. 
-1. En la página **Azure Center for SAP Solutions \| información general**, seleccione **Crear un nuevo sistema SAP**.
-1. En la pestaña **Aspectos básicos** de la página **Crear instancia virtual para soluciones de SAP**, especifique la siguiente configuración y seleccione **Siguiente: Máquinas virtuales**
+1. En la página **Azure Center for SAP Solutions \| Información general**, seleccione **Crear un nuevo sistema SAP**.
+1. En la pestaña **Aspectos básicos** de la página **Crear Virtual Instance for SAP solutions**, especifique la siguiente configuración y seleccione **Siguiente: Máquinas virtuales**
 
    |Configuración|Valor|
    |---|---|
@@ -426,7 +432,7 @@ Esta actividad corresponde a la siguiente tarea de este ejercicio:
 
    >**Nota**: si es necesario, puede solicitar el aumento de cuota seleccionando el vínculo **Solicitar cuota** para una SKU específica de máquinas virtuales y enviando una solicitud de aumento de cuota. El procesamiento de una solicitud suele tardar unos minutos.
 
-   >**Nota**: el Centro de Azure para soluciones de SAP aplica el uso de las SKU de máquina virtual admitidas por SAP durante la implementación.
+   >**Nota**: Azure Center for SAP solutions aplica el uso de las SKU de máquina virtual admitidas por SAP durante la implementación.
 
 1. En la pestaña **Máquinas virtuales**, en la sección **Discos de datos**, seleccione el vínculo **Ver y personalizar la configuración**.
 1. En la página **Configuración del disco de base de datos**, revise la configuración recomendada sin realizar ningún cambio y seleccione **Cerrar**.
@@ -435,7 +441,7 @@ Esta actividad corresponde a la siguiente tarea de este ejercicio:
 1. En la pestaña **Revisar y crear**, espere a que se complete el proceso de validación, active la casilla de confirmación que tiene una cuota amplia disponible en la región de implementación para evitar que se produzca un error de "Cuota insuficiente" y seleccione **Crear**.
 1. Cuando se le solicite, en la ventana **Generar nuevo par de claves**, seleccione **Descargar clave privada y crear recursos**.
 
-   >**Nota**: la clave privada necesaria para conectarse a las máquinas virtuales de Azure incluidas en la implementación se descargará en el equipo desde el que ejecuta este laboratorio.
+   >**Nota**: La clave privada necesaria para conectarse a las máquinas virtuales de Azure incluidas en la implementación se descargará en el equipo desde el que ejecuta este laboratorio.
 
    >**Nota**: Espere a que la implementación se complete. Esto puede tardar unos 25 minutos.
 

@@ -149,7 +149,7 @@ En este ejercicio, implementará los componentes de proceso de infraestructura d
     | **Habilitación de la redes aceleradas** | **Activado** |
     | **Opciones de equilibrio de carga** | **Ninguno** |
     | **Habilitación de una identidad administrada asignada por el sistema** | **Desactivado** |
-    | **Inicio de sesión con Azure AD** | **Desactivado** |
+    | **Inicio de sesión con Azure AD** | **Desactivado** |
     | **Habilitación del apagado automático** | **Desactivado** |
     | **Opción de orquestación de revisiones** | **Actualizaciones manuales** |
     | **Diagnósticos de arranque** | **Deshabilitar** |
@@ -696,7 +696,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
     | **Habilitación de la redes aceleradas** | **Desactivado** |
     | **Opciones de equilibrio de carga** | **Ninguno** |
     | **Habilitación de una identidad administrada asignada por el sistema** | **Desactivado** |
-    | **Inicio de sesión con Azure AD** | **Desactivado** |
+    | **Inicio de sesión con Azure AD** | **Desactivado** |
     | **Habilitación del apagado automático** | **Desactivado** |
     | **Diagnósticos de arranque** | **Deshabilitar** |
     | **Habilitación de diagnósticos del SO invitado** | **Desactivado** |

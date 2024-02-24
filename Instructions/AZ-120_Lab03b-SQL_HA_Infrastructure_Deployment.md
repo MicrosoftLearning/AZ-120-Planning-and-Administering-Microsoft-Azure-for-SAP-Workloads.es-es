@@ -305,7 +305,7 @@ En esta tarea, implementará el clúster del Servidor de archivos de escalabilid
     | **Habilitación de la redes aceleradas** | **Desactivado** |
     | **Opciones de equilibrio de carga** | **Ninguno** |
     | **Habilitación de una identidad administrada asignada por el sistema** | **Desactivado** |
-    | **Inicio de sesión con Azure AD** | **Desactivado** |
+    | **Inicio de sesión con Azure AD** | **Desactivado** |
     | **Habilitación del apagado automático** | **Desactivado** |
     | **Opciones de orquestación de revisiones** | **Actualizaciones manuales** |
     | **Diagnósticos de arranque** | **Deshabilitar** |

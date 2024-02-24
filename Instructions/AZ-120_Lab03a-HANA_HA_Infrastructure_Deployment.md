@@ -50,7 +50,7 @@ En este ejercicio, implementará los componentes de proceso de infraestructura d
 
 1. En Azure Portal, inicie una sesión de Bash en Cloud Shell. 
 
-    > **Nota**: Si es la primera vez que inicia Cloud Shell en la suscripción actual de Azure, se le pedirá que cree un recurso compartido de archivos de Azure para conservar los archivos de Cloud Shell. Si es así, acepte los valores predeterminados, lo que dará lugar a la creación de una cuenta de almacenamiento en un grupo de recursos generado automáticamente.
+    > **Nota**: si es la primera vez que inicia Cloud Shell en la suscripción actual de Azure, se le pedirá que cree un recurso compartido de archivos de Azure para conservar los archivos de Cloud Shell. Si es así, acepte los valores predeterminados, lo que dará lugar a la creación de una cuenta de almacenamiento en un grupo de recursos generado automáticamente.
 
 1. En el panel de Cloud Shell, ejecute el siguiente comando para especificar la región de Azure que es compatible con las zonas de disponibilidad y en la que quiere crear recursos para este laboratorio (sustituya `<region>` por el nombre de la región de Azure que es compatible con las zonas de disponibilidad):
 

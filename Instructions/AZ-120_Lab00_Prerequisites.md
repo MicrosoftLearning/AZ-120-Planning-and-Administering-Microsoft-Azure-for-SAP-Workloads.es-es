@@ -71,8 +71,8 @@ Período de tiempo: 30 minutos
 
 > **Nota**: para completar este laboratorio (como se describe), necesitará una suscripción de Microsoft Azure con las cuotas de vCPU que admiten la implementación de las siguientes máquinas virtuales:
 
-- 2 máquinas virtuales Standard_E4ds_v4 (4 vCPU y 32 GiB de memoria cada una) o 2 X Standard_D4ds_v4 (4 vCPU y 16 GiB de memoria cada una) para el nivel ASCS
-- 2 máquinas virtuales Standard_E4ds_v4 (4 vCPU y 32 GiB de memoria cada una) o 2 X Standard_D4ds_v4 (4 vCPU y 16 GiB de memoria cada una) para la capa de aplicación 
+- 2 máquinas virtuales Standard_E4ds_v4 (4 vCPU y 32 GiB de memoria cada una) o 2 Standard_D4ds_v4 (4 vCPU y 16 GiB de memoria cada una) para el nivel ASCS
+- 2 máquinas virtuales Standard_E4ds_v4 (4 vCPU y 32 GiB de memoria cada una) o 2 Standard_D4ds_v4 (4 vCPU y 16 GiB de memoria cada una) para la capa de aplicación 
 - 2 máquinas virtuales Standard_M64ms (64 vCPU y 1750 GiB de memoria cada una) para el nivel de base de datos
 
 1. En el equipo de laboratorio, inicie un explorador web y vaya a Azure Portal en `https://portal.azure.com`.
@@ -94,7 +94,7 @@ Período de tiempo: 30 minutos
 1. Revise la salida para identificar el uso actual y el límite de vCPU. Asegúrese de que la diferencia entre ellas es suficiente para dar cabida a las vCPU de las máquinas virtuales de Azure que se implementarán en este laboratorio. Tenga en cuenta los números de vCPU regionales y específicos de la familia de máquinas virtuales. 
 1. Si el número de vCPU no es suficiente, cierre el panel de Cloud Shell, en Azure Portal, en el cuadro de texto **Buscar**, busque y seleccione **Cuotas**.
 1. En la página **Cuotas**, seleccione **Proceso**.
-1. En la **Cuotas \| Proceso**, use el filtro **Región** para seleccionar la región de Azure a la que va a implementar recursos en este laboratorio.
+1. En la página **Cuotas \| Proceso**, use el filtro **Región** para seleccionar la región de Azure a la que va a implementar recursos en este laboratorio.
 1. En la columna **Nombre de cuota**, busque y seleccione el nombre de la SKU de máquina virtual que requiere un aumento de cuota. 
 1. En la misma fila, compruebe la entrada en la columna **Ajustable**. El siguiente paso depende de si la columna contiene la entrada **Sí** o **No**.
 
@@ -111,7 +111,7 @@ Período de tiempo: 30 minutos
     |Tipo de cuota|**El límite de suscripción de proceso o máquina virtual (núcleos o vCPU) aumenta**|
 
 1. En la pestaña **Detalles adicionales**, seleccione **Especificar detalles**.
-1. En la pestaña **Detalles de cuota**, en la lista desplegable **Modelo de implementación**, seleccione **Resource Manager**, en la **lista desplegable Ubicaciones**, seleccione la región de Azure de destino, en la lista desplegable **Cuotas**, seleccione la serie de máquinas virtuales de Azure para la que necesita aumentar los límites de cuota, en el cuadro de texto **Nuevo límite**, escriba el nuevo límite de cuota y, a continuación, seleccione **Guardar y continuar**.
+1. En la pestaña **Detalles de cuota**, en la lista desplegable **Modelo de implementación**, seleccione **Resource Manager**, en la lista desplegable **Ubicaciones**, seleccione la región de Azure de destino, en la lista desplegable **Cuotas**, seleccione la serie de máquinas virtuales de Azure para la que necesita aumentar los límites de cuota, en el cuadro de texto **Nuevo límite**, escriba el nuevo límite de cuota y, a continuación, seleccione **Guardar y continuar**.
 1. De nuevo en la pestaña **Detalles adicionales**, en la pestaña **Información de diagnóstico avanzada**, seleccione **Sí (recomendado)**.
 1. En la sección **Método de soporte técnico**, seleccione **Correo electrónico** o **Teléfono** como método de contacto preferido y, a continuación, seleccione **Siguiente**.
 1. En la pestaña **Revisar y crear**, seleccione **Crear**.
