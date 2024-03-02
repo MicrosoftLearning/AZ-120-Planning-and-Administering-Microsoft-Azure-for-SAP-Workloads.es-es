@@ -260,9 +260,9 @@ En este ejercicio, implementará los componentes de proceso de infraestructura d
 
 #### Tarea 3: Aprovisionamiento de Azure Bastion 
 
-> **Nota**: Azure Bastion permite la conexión a las máquinas virtuales de Azure sin puntos de conexión públicos que implementamos en la tarea anterior de este ejercicio, al tiempo que proporciona protección contra vulnerabilidades de seguridad de fuerza bruta que tienen como destino las credenciales de nivel de sistema operativo.
+> **Nota**: Azure Bastion permite la conexión a las máquinas virtuales de Azure (que implementó en la tarea anterior de este ejercicio) sin usar puntos de conexión públicos, al tiempo que proporciona protección contra vulnerabilidades de seguridad bruta que tienen como destino las credenciales de nivel de sistema operativo.
 
-> **Nota**: Asegúrese de que el explorador tiene habilitada la función emergente.
+> **Nota**: Para usar Azure Bastion, asegúrese de que el explorador tenga habilitada la funcionalidad emergente.
 
 1. En la ventana del explorador en que se muestra Azure Portal, abra otra pestaña y, en la pestaña del explorador, vaya a [**Azure Portal**](https://portal.azure.com).
 1. En Azure Portal, seleccione el icono de la barra de herramientas inmediatamente a la derecha del cuadro de texto de búsqueda para abrir el panel de **Cloud Shell**.
