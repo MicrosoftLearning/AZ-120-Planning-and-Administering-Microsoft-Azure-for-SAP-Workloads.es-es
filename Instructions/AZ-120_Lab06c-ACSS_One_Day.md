@@ -228,9 +228,9 @@ Esta actividad corresponde a la siguiente tarea de este ejercicio:
     |Subred de aplicación|**app**|
     |Subred de base de datos|**db**|
     |Opciones de imagen del sistema operativo de la aplicación|**Uso de una imagen de Marketplace**|
-    |Imagen del sistema operativo de la aplicación|**Red Hat Enterprise Linux 8.6 para aplicaciones SAP: x64 Gen2 más reciente**|
+    |Imagen del sistema operativo de la aplicación|**Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**|
     |Opciones de imagen del sistema operativo de base de datos|**Uso de una imagen de Marketplace**|
-    |Imagen del sistema operativo de la base de datos|**Red Hat Enterprise Linux 8.6 para aplicaciones SAP: x64 Gen2 más reciente**|
+    |Imagen del sistema operativo de la base de datos|**Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**|
     |Opción de transporte de SAP|**Crear un nuevo directorio de transporte de SAP**|
     |Grupo de recursos de transporte|**acss-infra-RG**|
     |Nombre de la cuenta de almacenamiento|*blank*|
@@ -241,6 +241,8 @@ Esta actividad corresponde a la siguiente tarea de este ejercicio:
     |SQP FQDN|**sap.contoso.com**|
     |Origen de identidad administrada|**Uso de una identidad administrada asignada por el usuario existente**|
     |Nombre de la identidad administrada|**acss-infra-MI**|
+
+    >**Nota**: Asegúrate de seleccionar **Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**
 
 1. En la pestaña **Máquinas virtuales**, especifique la configuración siguiente:
 

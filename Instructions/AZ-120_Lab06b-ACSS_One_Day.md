@@ -142,7 +142,7 @@ En esta tarea, creará la red virtual de Azure que hospeda todas las máquinas v
 1. Seleccione **+ Agregar una subred**.
 1. En el panel **Agregar una subred**, especifique la siguiente configuración y, a continuación, seleccione **Agregar** (deje los demás con sus valores predeterminados):
 
-   |Configuración|Value|
+   |Configuración|Valor|
    |---|---|
    |Nombre|**app**|
    |Dirección inicial|**10.0.2.0**|
@@ -151,7 +151,7 @@ En esta tarea, creará la red virtual de Azure que hospeda todas las máquinas v
 1. Seleccione **+ Agregar una subred**.
 1. En el panel **Agregar una subred**, especifique la siguiente configuración y, a continuación, seleccione **Agregar** (deje los demás con sus valores predeterminados):
 
-   |Configuración|Value|
+   |Configuración|Valor|
    |---|---|
    |Nombre|**db**|
    |Dirección inicial|**10.0.3.0**|
@@ -204,7 +204,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destino|**Direcciones IP**|
    |Intervalos de direcciones IP de destino y CIDR|**13.91.47.76,40.85.190.91,52.187.75.218,52.174.163.213,52.237.203.198,52.136.197.163,20.225.226.182,52.142.4.99,20.248.180.252,20.24.186.80**|
    |Service|**Personalizada**|
@@ -225,7 +225,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destino|**Direcciones IP**|
    |Intervalos de direcciones IP de destino y CIDR|**52.188.224.179,52.186.168.210,52.188.81.163,40.121.202.140**|
    |Service|**Personalizada**|
@@ -244,7 +244,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destination|**Etiqueta de servicio**|
    |Etiqueta de servicio de destino|**Storage**|
    |Service|**Personalizada**|
@@ -265,7 +265,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destination|**Etiqueta de servicio**|
    |Etiqueta de servicio de destino|**AzureKeyVault**|
    |Service|**Personalizada**|
@@ -284,7 +284,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destination|**Etiqueta de servicio**|
    |Etiqueta de servicio de destino|**AzureActiveDirectory**|
    |Service|**Personalizada**|
@@ -303,7 +303,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destination|**Etiqueta de servicio**|
    |Etiqueta de servicio de destino|**AzureResourceManager**|
    |Service|**Personalizada**|
@@ -322,7 +322,7 @@ En esta tarea, creará y configurará un grupo de seguridad de red (NSG) que se 
    |Configuración|Valor|
    |---|---|
    |Origen|**Cualquiera**|
-   |Rangos del puerto origen|*|
+   |Intervalos de puertos de origen|*|
    |Destination|**Etiqueta de servicio**|
    |Etiqueta de servicio de destino|**Internet**|
    |Service|**Personalizada**|
@@ -402,9 +402,9 @@ Esta actividad corresponde a la siguiente tarea de este ejercicio:
    |Subred de aplicación|**aplicación (10.0.2.0/24)**|
    |Subred de base de datos|**db (10.0.3.0/24)**|
    |Opciones de imagen del sistema operativo de la aplicación|**Uso de una imagen de Marketplace**|
-   |Imagen del sistema operativo de la aplicación|**Red Hat Enterprise Linux 8.2 para aplicaciones SAP: x64 Gen2 más reciente**|
+   |Imagen del sistema operativo de la aplicación|**Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**|
    |Opciones de imagen del sistema operativo de base de datos|**Uso de una imagen de Marketplace**|
-   |Imagen del sistema operativo de la base de datos|**Red Hat Enterprise Linux 8.2 para aplicaciones SAP: x64 Gen2 más reciente**|
+   |Imagen del sistema operativo de la base de datos|**Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**|
    |Opción de transporte de SAP|**No incluir el directorio de transporte de SAP**|
    |Tipo de autenticación|**SSH público**|
    |Nombre de usuario|**contososapadmin**|
