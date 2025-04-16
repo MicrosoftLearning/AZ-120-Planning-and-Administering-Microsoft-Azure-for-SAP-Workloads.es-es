@@ -127,9 +127,9 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|el nombre de un **nuevo** grupo de recursos **ACSS-DEMO**|
-    |Nombre de la cuenta de almacenamiento|Cualquier nombre globalmente único con una longitud de 3 a 24 caracteres, que consta de letras y dígitos|
+    |Nombre de la cuenta de almacenamiento|Cualquier nombre globalmente único con una longitud de 3 a 24 caracteres, que consta de letras y dígitos|
     |Region|el nombre de la región de Azure en la que tiene suficientes cuotas de vCPU para ejecutar este laboratorio|
     |Rendimiento|**Estándar**|
     |Redundancia|**Almacenamiento con redundancia geográfica (GRS)**|
@@ -149,7 +149,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**ACSS-DEMO**|
     |Region|el nombre de la región de Azure en la que aprovisionó la cuenta de almacenamiento anteriormente en este laboratorio|
     |Nombre|**Contoso-MSI**|
@@ -187,7 +187,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|Nombre de un **nuevo** grupo de recursos **CONTOSO-VNET-RG**|
     |Nombre|**ACSS-DEMO-NSG**|
     |Region|el nombre de la región de Azure en la que aprovisionó la cuenta de almacenamiento anteriormente en este laboratorio|
@@ -204,7 +204,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**CONTOSO-VNET-RG**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
     |Nombre|**ACSS-ROUTE**|
@@ -220,7 +220,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**CONTOSO-VNET-RG**|
     |Nombre de la red virtual|**CONTOSO-VNET**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
@@ -243,7 +243,7 @@ El ejercicio consta de las tareas siguientes:
 1. En la página **CONTOSO-VNET \| Subredes**, seleccione **+ Subred**. 
 1. En el panel **Agregar subredes**, especifique la siguiente configuración y seleccione **Guardar**:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**app**|
     |Intervalo de direcciones de subred|**10.5.0.0/24**|
@@ -253,7 +253,7 @@ El ejercicio consta de las tareas siguientes:
 1. De nuevo en la página **CONTOSO-VNET \| Subredes**, seleccione **+ Subred**. 
 1. En el panel **Agregar subredes**, especifique la siguiente configuración y seleccione **Guardar**:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**AzureBastionSubnet**|
     |Intervalo de direcciones de subred|**10.5.1.0/26**|
@@ -261,7 +261,7 @@ El ejercicio consta de las tareas siguientes:
 1. De nuevo en la página **CONTOSO-VNET \| Subredes**, seleccione **+ Subred**. 
 1. En el panel **Agregar subredes**, especifique la siguiente configuración y seleccione **Guardar**:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**db**|
     |Intervalo de direcciones de subred|**10.5.2.0/24**|
@@ -271,7 +271,7 @@ El ejercicio consta de las tareas siguientes:
 1. De nuevo en la página **CONTOSO-VNET \| Subredes**, seleccione **+ Subred**. 
 1. En el panel **Agregar subredes**, especifique la siguiente configuración y seleccione **Guardar**:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**AzureFirewallSubnet**|
     |Intervalo de direcciones de subred|**10.5.3.0/24**|
@@ -286,7 +286,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**CONTOSO-VNET-RG**|
     |Nombre|**FirewallPolicy_contoso-firewall**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
@@ -298,7 +298,7 @@ El ejercicio consta de las tareas siguientes:
 1. En la pestaña **Reglas**, seleccione **+ Agregar una colección de reglas**.
 1. En el panel **Agregar una colección de reglas**, especifique la siguiente configuración:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**AllowOutbound**|
     |Tipo de colección de reglas|**Network**|
@@ -308,11 +308,11 @@ El ejercicio consta de las tareas siguientes:
 
 1. En el panel **Agregar una colección de reglas**, en la sección **Reglas**, agregue una regla con la siguiente configuración:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**RHEL**|
     |Tipo de origen|**Dirección IP**|
-    |Source|*|
+    |Origen|*|
     |Protocolo|**Cualquiera**|
     |Puertos de destino|*|
     |Tipo de destino|**Dirección IP**|
@@ -320,11 +320,11 @@ El ejercicio consta de las tareas siguientes:
 
     >**Nota**: Para identificar las direcciones IP que se van a usar para RHEL, consulte [Preparación de la red para la implementación de la infraestructura](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network)
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**ServiceTags**|
     |Tipo de origen|**Dirección IP**|
-    |Source|*|
+    |Origen|*|
     |Protocolo|**Cualquiera**|
     |Puertos de destino|*|
     |Tipo de destino|**Etiqueta de servicio**|
@@ -332,11 +332,11 @@ El ejercicio consta de las tareas siguientes:
 
     >**Nota**: Si se prefiere, es posible usar etiquetas de servicio con ámbitos regionales. 
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**SUSE**|
     |Tipo de origen|**Dirección IP**|
-    |Source|*|
+    |Origen|*|
     |Protocolo|**Cualquiera**|
     |Puertos de destino|*|
     |Tipo de destino|**Dirección IP**|
@@ -344,11 +344,11 @@ El ejercicio consta de las tareas siguientes:
 
     >**Nota**: Para identificar las direcciones IP que se van a usar para SUSE, consulte [Preparación de la red para la implementación de la infraestructura](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network)
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**AllowOutbound**|
     |Tipo de origen|**Dirección IP**|
-    |Source|*|
+    |Origen|*|
     |Protocolo|**TCP,UDP,ICMP,Any**|
     |Puertos de destino|*|
     |Tipo de destino|**Dirección IP**|
@@ -371,7 +371,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**CONTOSO-VNET-RG**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
     |Nombre|**contoso-firewal-pip**|
@@ -393,13 +393,13 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**CONTOSO-VNET-RG**|
     |Nombre|**contoso-firewall**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
     |Zona de disponibilidad|**Ninguno**|
     |SKU del firewall|**Estándar**|
-    |Administración del firewall|**Usar una directiva de firewall para administrar este firewall**|
+    |Administración del firewall|**Uso de una directiva de firewall para administrar este firewall**|
     |Directiva de firewall|**FirewallPolicy_contoso-firewall**|
     |Elegir una red virtual|**Utilizar existente**|
     |Red virtual|**CONTOSO-VNET**|
@@ -436,7 +436,7 @@ El ejercicio consta de las tareas siguientes:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|**CONTOSO-VNET-RG**|
     |Nombre|**ACSS-BASTION**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
@@ -474,7 +474,7 @@ El ejercicio consta de la siguiente tarea:
 
     |Configuración|Valor|
     |---|---|
-    |Suscripción|El nombre de la suscripción de Azure que usa en este laboratorio|
+    |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
     |Resource group|Nombre de un **nuevo** grupo de recursos **Contoso-SAP-C1S**|
     |Nombre (SID)|**C1S**|
     |Region|el nombre de la región de Azure en la que aprovisionó recursos anteriormente en este laboratorio|
@@ -488,8 +488,8 @@ El ejercicio consta de la siguiente tarea:
     |Red virtual|**CONTOSO-VNET**|
     |Subred de aplicación|**aplicación (10.5.0.0/24)**|
     |Subred de base de datos|**base de datos (10.5.2.0/24)**|
-    |Imagen del sistema operativo de la aplicación|**Red Hat Enterprise Linux 8.2 para aplicaciones SAP: x64 Gen2 más reciente**|
-    |Imagen del sistema operativo de la base de datos|**Red Hat Enterprise Linux 8.2 para aplicaciones SAP: x64 Gen2 más reciente**|
+    |Imagen del sistema operativo de la aplicación|**Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**|
+    |Imagen del sistema operativo de la base de datos|**Red Hat Enterprise Linux 8.4 para aplicaciones SAP: x64 Gen2 más reciente**|
     |Opción de transporte de SAP|**Crear un nuevo directorio de transporte de SAP**|
     |Grupo de recursos de transporte|**ACSS-DEMO**|
     |Nombre de la cuenta de almacenamiento|sin entrada|
