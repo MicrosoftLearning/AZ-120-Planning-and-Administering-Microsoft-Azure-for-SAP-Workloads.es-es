@@ -107,7 +107,9 @@ En este ejercicio, implementará los componentes de proceso de infraestructura d
 
     > **Nota**: si se produce un error en la implementación, incluida la instrucción `PowerShell DSC resource MSFT_xADDomainController failed to execute Set-TargetResource functionality with error message: Domain 'adatum.com' could not be found`, siga estos pasos para corregir este problema:
 
-    - En Azure Portal, vaya a la hoja de la **máquina virtual adBDC**, en el menú de navegación vertical del lado izquierdo, en la sección **Configuración**, seleccione **Extensiones y aplicaciones**, en el panel **Extensiones y aplicaciones**, seleccione **Preparar BDC** y, en el panel **Preparar BDC**, seleccione **Desinstalar**. 
+    - En Azure Portal, ve a la hoja de **adVNET**, en el menú de navegación vertical del lado izquierdo, en la sección **Configuración**, selecciona **Servidores DNS**, en la página **adVNET \| Servidores DNS**, elimina la entrada **10.0.0.5** y, a continuación, selecciona **Guardar**.
+      
+    - Ve a la hoja de la máquina virtual **adBDC**, en el menú de navegación vertical del lado izquierdo, en la sección **Configuración**, selecciona **Extensiones + aplicaciones**,en el panel **Extensiones + aplicaciones**, selecciona **PrepareBDC** y, en el panel **Preparar BDC**, selecciona **Desinstalar**. 
 
     - Vuelva a la hoja de máquina virtual **adBDC** y reinicie la máquina virtual de Azure.
 
@@ -283,7 +285,7 @@ En este ejercicio, implementará los componentes de proceso de infraestructura d
 
    |Configuración|Valor|
    |---|---|
-   |Suscripción|nombre de la suscripción de Azure que usa en este laboratorio|
+   |Suscripción|Nombre de la suscripción a Azure que usas en este laboratorio|
    |Resource group|**az12001b-cl-RG**|
    |Nombre|**az12001b-bastion**|
    |Region|la misma región de Azure en la que se han implementado los recursos en las tareas anteriores de este ejercicio.|
@@ -349,7 +351,7 @@ Duración: 40 minutos
 
 1. Use el **Asistente para nuevos grupos de almacenamiento** para crear un nuevo grupo de almacenamiento con la siguiente configuración:
      
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **Grupo de almacenamiento de datos** |
     | **Discos físicos** | *seleccione los tres discos con números de disco correspondientes a los tres primeros números de LUN (0-2) y establezca su asignación en* **Automático** |
@@ -378,7 +380,7 @@ Duración: 40 minutos
 
 1. De nuevo en la vista **Grupos de almacenamiento**, use el **Asistente para nuevos grupos de almacenamiento** para crear un nuevo grupo de almacenamiento con la siguiente configuración:
     
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **Grupo de almacenamiento de registro** |
     | **Discos físicos** | *seleccione los últimos cuatro discos y establezca su asignación en* **Automático** |
@@ -579,7 +581,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
 
 1. En la hoja **az12001b-cl-lb0**, agregue un grupo de back-end con la siguiente configuración:
     
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **az12001b-cl-lb0-bepool** |
     | **Red virtual** | **adVNET** |
@@ -589,7 +591,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
 
 1. En la hoja **az12001b-cl-lb0**, agregue un sondeo de estado con la siguiente configuración:
     
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **az12001b-cl-lb0-hprobe** |
     | **Protocolo** | **TCP** |
@@ -599,7 +601,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
 
 1. En la hoja **az12001b-cl-lb0**, agregue una regla de equilibrio de carga de red con la siguiente configuración:
      
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **az12001b-cl-lb0-lbruletcp1433** |
     | **Versión de IP** | **IPv4** |
@@ -663,7 +665,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
 
 1. En la hoja **az12001b-cl-lb1-bepool**, especifique la siguiente configuración y haga clic en **Guardar**:
     
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Red virtual** | **adVNET (4 VM)** |
     | **Máquina virtual** | **az12001b-cl-vm0**  DIRECCIÓN IP: **ipconfig1** |
@@ -673,7 +675,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
 
 1. En la hoja **az12001b-cl-lb1: sondeos de estado**, agregue un sondeo de estado con la siguiente configuración:
     
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **az12001b-cl-lb1-hprobe** |
     | **Protocolo** | **TCP** |
@@ -685,7 +687,7 @@ En este ejercicio, implementará Azure Load Balancer para dar cabida a las insta
 
 1. En la hoja **az12001b-cl-lb1: reglas de equilibrio de carga**, agregue una regla de equilibrio de carga de red con la siguiente configuración:
     
-    | Configuración | Value |
+    | Configuración | Valor |
     |   --    |  --   |
     | **Nombre** | **az12001b-cl-lb1-lbharule** |
     | **Versión de IP** | **IPv4** |
